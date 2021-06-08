@@ -1,0 +1,506 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<title>Digigarage restaurant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Default-JavaScript-File -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+<!-- //Default-JavaScript-File -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/easy-responsive-tabs.css">
+
+<link rel="stylesheet" href="css/jquery-ui.css" type="text/css" media="all">
+
+
+
+<!-- gallery -->
+	<link href="css/lsb.css" rel="stylesheet" type="text/css">
+<!-- //gallery -->
+
+<!-- banner text effect css files -->
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style3.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<!-- banner text effect css files -->
+
+<!-- logo text effect css files -->
+	<link rel="stylesheet" type="text/css" href="css/demo1.css" />
+	<link rel="stylesheet" type="text/css" href="css/linkstyles.css" />
+<!-- //logo text effect css files -->
+	
+<!-- default css files -->
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+<!-- default css files -->
+	
+<!--web font-->
+	<link href="http://fonts.googleapis.com/css?family=Pacifico&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+<!--//web font-->
+	
+<!-- scrolling script -->
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script> 
+<!-- //scrolling script -->
+<style>
+.agileinfo-social-grids {
+    float: right;
+    position: absolute;
+    right: 32px;
+    top: 20px;
+}
+
+
+
+
+.marg{margin-top:-90px;}
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;margin-top:20px;
+}
+
+
+.morelink:focus {
+    text-decoration:none
+}
+
+.blog-card {
+  display: block;
+  position: relative;
+  background: #444;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat !important;
+  width: 85%;
+  max-width: 800px;
+  height: 380px;
+  box-shadow: 4px 8px 28px rgba(39, 44, 49, .1), 1px 3px 8px rgba(39, 44, 49, .075);
+  margin: 15vh auto;
+  overflow: hidden !important;
+}
+.blog-card:hover {
+  box-shadow: 0 0 1px rgba(39, 44, 49, .2), 0 3px 16px rgba(39, 44, 49, .25);
+  transform: translate3D(0, -0.5px, 0);
+}
+.blog-card .content-mask {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.9);
+  width: 61%;
+  height: 100%;
+  padding: 0.75em 0 0.75em 2.5em;
+  overflow: hidden;
+  z-index: 5;
+}
+.blog-card .horizontal {
+  display: inline-block;
+  position: relative;
+  background: linear-gradient(to top right, rgba(255, 255, 255, 0.9) 50%, transparent 0);
+  height: 101%;
+  width: 20%;
+  top: -5%;
+  right: 0.8%;
+  overflow: hidden;
+}
+.blog-card.python {
+  background-image: url('images/newsroom.jpg');height: 390px;
+    width: 554px;
+}
+.blog-card.web {
+  background: url('images/newsroom.jpg');
+}
+.content-container {
+  margin-right: -5vw;
+}
+.category {
+  display: inline-block;
+  background: #e23f7e;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+  min-width: 45px;
+  border-radius: 5px;
+  box-shadow: 0 0 1px rgba(172, 28, 56, .1), 0 2px 6px rgba(172, 28, 56, .175);
+  margin: 3vh 2px 2.5vh;
+  padding: 6px 8px;
+  cursor: pointer;
+  z-index: 9;
+}
+.category.python {
+  background: #2a9d5a;
+}
+.category:hover {
+  box-shadow: 0 0 1px rgba(10, 96, 58, .2), 0 3px 6px rgba(39, 44, 49, .25);
+}
+h1 {
+  background: transparent;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-size: 2.5em;
+  font-weight: 800;
+  line-height: 1.2;
+  height: auto;
+  border-bottom: 2px solid rgba(204, 204, 204, 0.75);
+  margin-top: 0;
+  margin-bottom: 0.35em;
+  padding-bottom: 5px;
+}
+p {
+  font-size: 1.1em;
+  line-height: 1.4;
+  width: 100%;
+  margin-top: 0.3em;
+  padding-left: 2px;
+  z-index: 9;
+}
+.post-detail {
+  color: rgba(0, 0, 0, 0.55);
+  margin-top: 6.5vh;
+  padding-left: 2px;
+  vertical-align: middle;
+}
+.post-detail .icon svg {
+  position: relative;
+  width: 14px;
+  top: 2.25px;
+  margin-right: 7px;
+}
+.post-detail .date {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 0.85em;
+}
+.credit {
+  position: relative;
+  font-family: 'Nunito' Helvetica, sans-serif;
+  font-size: 1.5em;
+  font-weight: 200;
+  text-align: center;
+  bottom: 0.75em;
+  margin-bottom: 10vh;
+}
+.credit .creator-link {
+  color: #000;
+  font-family: "Kaushan Script", "Lato", Helvetica, sans-serif;
+  font-size: 1.05em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: all 300ms linear;
+}
+.credit .creator-link:hover {
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  transition: all 350ms linear;
+}
+</style>
+</head>
+
+<!-- Body -->
+<body>
+
+<!-- banner -->
+	<div class="banners jarallax">
+		<div class="agileinfo-dot">
+			<div class="header">
+				<div class="container-fluid">
+					<div class="header-left">
+						<div class="w3layouts-logo grid__item">
+							<h1>
+								<a class="link link--ilin" href="#"><span>Food</span><span>Plaza</span></a>
+							</h1>
+						</div>
+					</div>
+					<div class="top-nav">
+						<nav class="navbar navbar-default">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav"style="margin-left:-95px;">
+									<li><a  href="index.html">Home</a></li>
+									<li><a href="about-us.html" >About us</a></li>
+									<li><a href="menu.html">Menu</a></li>
+									
+									<li><a href="gallery.html" >Gallery</a></li>	
+									<li><a href="team.html" >Team</a></li>
+									<li><a href="newsroom.html" >Newsroom</a></li>
+										<li><a href="blog.html" >Blog</a></li>
+									<li><a href="testimonial.html" >Testimonial</a></li>
+											<li><a href="#" data-toggle="modal" data-target="#myModal2">Reservation </a></li>
+									<li><a href="contact-us.html" >Contact us</a></li>
+								</ul>
+						
+					<div class="clearfix"> </div>						
+							</div>	
+						</nav>
+						<div class="agileinfo-social-grids">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-rss"></i></a></li>
+								
+							</ul>
+						</div>
+						
+				</div>		
+					</div>
+					
+			</div>
+	
+		</div>
+	</div>
+<!-- //banner -->
+<!---728x90--->
+
+	
+
+	<div class="modal video-modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal2">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div id="small-dialog2" class="mfp-hide book-form">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h3>Book A Table Now</h3>
+					<form action="#" method="post">
+						<input type="text" name="Name" placeholder="Reservation Name" required=""/>
+						<input type="tel" name="number" placeholder="Mobile Number" required=""/>
+						<input type="email" name="Email" class="email" placeholder="Email" required=""/>
+				
+						<input class="date" type="text" id="datepicker2"  name="datepicker2" placeholder="Date Of Arrival" title="Please enter your Arrival Date " required=""/>
+						<textarea name="Message" placeholder="Additional Information (Optional)" ></textarea>
+						<input type="submit" value="Book table">
+					</form>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<!-- gallery -->
+	<div class="gallery" id="gallery">
+			<div class="agileits_w3layouts_head">
+			<h3>Newsroom</h3>
+			</div>
+			
+</div>
+
+
+
+<section>
+
+<div class="container" style="margin-top:-165px;">
+
+<div class="row">
+
+	
+	
+		<div class="col-md-6 ">
+	<div class="blog-card python">
+		<div class="content-mask">
+			<span class="python category">Latest news</span>
+		<h4 style="font-size:22px;font-weight:600;">Lorem Ipsum is simply dummy</h4>
+			<p class="more">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+			<div class="post-detail">
+				<span class="icon"><svg class="svg-inline--fa fa-calendar-alt fa-w-14" aria-hidden="true" data-prefix="far" data-icon="calendar-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"></path></svg></span><span class="date">19 May 2018</span>
+			</div>
+		</div>
+		<div class="horizontal"></div>
+	</div>
+	</div>
+	
+	<div class="col-md-6">
+	<div class="blog-card python">
+		<div class="content-mask">
+			<span class="python category">Latest news</span>
+			<h4 style="font-size:22px;font-weight:600;">Lorem Ipsum is simply dummy</h4>
+						<p class="more">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+			<div class="post-detail">
+				<span class="icon"><svg class="svg-inline--fa fa-calendar-alt fa-w-14" aria-hidden="true" data-prefix="far" data-icon="calendar-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"></path></svg></span><span class="date">19 May 2018</span>
+			</div>
+		</div>
+		<div class="horizontal"></div>
+	</div>
+	</div>
+	
+	
+	
+		<div class="col-md-6 marg">
+	<div class="blog-card python">
+		<div class="content-mask">
+			<span class="python category">Latest news</span>
+			<h4 style="font-size:22px;font-weight:600;">Lorem Ipsum is simply dummy</h4>
+			<p class="more">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+			<div class="post-detail">
+				<span class="icon"><svg class="svg-inline--fa fa-calendar-alt fa-w-14" aria-hidden="true" data-prefix="far" data-icon="calendar-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"></path></svg></span><span class="date">19 May 2018</span>
+			</div>
+		</div>
+		<div class="horizontal"></div>
+	</div>
+	</div>
+	
+	
+	
+	
+		<div class="col-md-6 marg">
+	<div class="blog-card python">
+		<div class="content-mask">
+			<span class="python category">Latest news</span>
+			<h4 style="font-size:22px;font-weight:600;">Lorem Ipsum is simply dummy</h4>
+			<p class="more">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+			<div class="post-detail">
+				<span class="icon"><svg class="svg-inline--fa fa-calendar-alt fa-w-14" aria-hidden="true" data-prefix="far" data-icon="calendar-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"></path></svg></span><span class="date">19 May 2018</span>
+			</div>
+		</div>
+		<div class="horizontal"></div>
+	</div>
+	</div>
+	
+</section>
+
+
+
+<!-- //gallery -->
+<!-- gallery js -->
+	<script src="js/lsb.min.js"></script>
+	<script>
+	$(window).load(function() {
+		  $.fn.lightspeedBox();
+		});
+	</script>
+<!-- //gallery js -->
+
+
+
+<div class="footer" style="margin-top:50px;">
+		<div class="col-md-6 footer-left">
+			<h3>Food Plaza</h3>
+			<p>Morbi eget mollis erat, sit amet feugiat nulla. In hac habitasse platea dictumst. Sed ac fermentum eros.Pellentesque tincidunt nisi sit amet dui lobortis.Pulvinar pellentesque dui tempor</p>
+			<p>Sed iaculis, nisl a eleifend porttitor, diam mauris gravida arcu, suscipit ullamcorper nulla diam vitae lorem..</p>
+		</div>
+		<div class="col-md-6 footer-right">
+			<section class="subscribe" id="subscribe">
+					<h3>Get In Touch</h3>
+			<p style="margin-left:-80px;line-height:1;"><i class="fa fa-address-book"></i> &nbsp; &nbsp;Xyz Road 1 Floor Delhi </p><br>
+					<p style="margin-left:-105px;line-height:1;"><i class="fa fa-phone"></i> &nbsp; &nbsp;9898989898 </p><br>
+							<p style="margin-left:-80px;line-height:1;"><i class="fa fa-envelope"></i> &nbsp; &nbsp;example@gmail.com </p>
+			<p></p>
+			<p></p>
+			</section>
+			<h4>Follow us</h4>
+				<div class="wthree-icon" style="word-spacing:20px;">
+					<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+					<a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+					<a href="#" class="google"><i class="fa fa-google-plus"></i></a> 
+					<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> 
+				</div>  
+		</div>
+		<div class="clearfix"></div>
+</div>
+<!-- //footer -->
+
+<!-- copyright -->
+<div class="copyright-agile">
+	<p>&copy; 2021 Digigarage. All rights reserved </p>
+</div>
+<!-- //copyright -->
+
+<script src="js/jarallax.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+
+
+
+		 <script>
+		 
+		 $(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 87;  // How many characters are shown by default
+    var ellipsestext = "";
+    var moretext = "Read More";
+    var lesstext = "Read Less";
+    
+
+    $('.more').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+ 
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().slideToggle("slow");
+        return false;
+    });
+});
+		 </script>
+
+
+</body>
+
+
+</html>
